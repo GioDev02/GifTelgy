@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { mockGifs } from './mock-data/gifs.mock'
+//import { mockGifs } from './mock-data/gifs.mock'
 import { CustomHeader } from './shared/components/CustomHeader'
 import SearchBar from './shared/components/SearchBar'
 import { PreviousSearches } from './gifs/components/PreviousSearches'
@@ -9,7 +9,7 @@ import type { Gif } from './gifs/interfaces/gif.interface'
 
 export const GifsApp = () => {
 
-    const [previousTerms, setPreviousTerms] = useState(['DB']);
+    const [previousTerms, setPreviousTerms] = useState<string[]>([]);
 
     const handleLabelClick = (term: string) => {
 
