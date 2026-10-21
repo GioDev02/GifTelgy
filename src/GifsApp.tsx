@@ -11,6 +11,8 @@ import useGifs from './gifs/hooks/useGifs'
 export const GifsApp = () => {
     const { previousTerms, gifResponse, handleSearch, handleTermClicked } = useGifs();
 
+    //const { } = useGifs();
+
     return (
         <>
             {/*header*/}

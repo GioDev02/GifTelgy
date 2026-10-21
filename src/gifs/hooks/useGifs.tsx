@@ -10,8 +10,9 @@ export default function useGifs() {
 
 
 
-    const handleTermClicked = (term: string) => {
-
+    const handleTermClicked = async (term: string) => {
+        const gifs = await getGifsByQuery(term);
+        setGifResponse(gifs);
     }
 
     const [gifResponse, setGifResponse] = useState<Gif[]>([]);
